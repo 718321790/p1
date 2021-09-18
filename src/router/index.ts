@@ -7,7 +7,7 @@ const routes: Array<RouteRecordRaw> = [
       title: "首页",
       keepAlive: true
     },
-    component: () => import("../views/home/index.vue")
+    component: () => import("../views/home/Index.vue")
   }
 ]
 const router = createRouter({
