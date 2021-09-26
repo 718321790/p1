@@ -8,6 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "currency.js": "^2.0.4",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11"
   },

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router"
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router"
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -7,11 +7,20 @@ const routes: Array<RouteRecordRaw> = [
       title: "首页",
       keepAlive: true
     },
-    component: () => import("../views/home/Index.vue")
+    component: () => import("../views/home/Home.vue")
+  },
+  {
+    path: "/all",
+    name: "All",
+    meta: {
+      title: "全部",
+      keepAlive: true
+    },
+    component: () => import("../views/all/All.vue")
   }
 ]
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 export default router
